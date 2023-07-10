@@ -1,0 +1,10 @@
+.background_image {
+    background-image: url("../img/alambre-enredado-abstracto-cerrar-fondo-estetico_800563-4298.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_login {
+    height: 15vh;
+    margin: auto;
+}

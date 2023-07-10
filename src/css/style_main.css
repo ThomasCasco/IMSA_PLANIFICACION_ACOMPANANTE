@@ -1,0 +1,14 @@
+.bg-black-alt {
+  background: #191919;
+}
+.text-black-alt {
+  color: #191919;
+}
+.border-black-alt {
+  border-color: #191919;
+}
+
+.main_logo_header {
+    height: 5vh;
+    width: 5vw;
+}
