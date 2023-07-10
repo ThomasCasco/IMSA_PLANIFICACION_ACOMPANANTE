@@ -1,11 +1,11 @@
 // Base de usuarios
 const users = [
   { username: 'sebastian.pereyra', password: 'coffeman1' },
-  { username: 'nicolas.rubio', password: 'coffeman2' },
-  { username: 'ariel.pesce', password: 'coffeman3' },
-  { username: 'facundo.sanchez', password: 'coffeman4' },
-  { username: 'joseluis.rodriguez', password: 'coffeman5' },
-  { username: 'thomas.casco', password: 'coffeman6' }
+  { username: 'nicolas.rubio', password: 'teaboy1' },
+  { username: 'ariel.pesce', password: 'coffeman2' },
+  { username: 'facundo.sanchez', password: 'taekwondo' },
+  { username: 'joseluis.rodriguez', password: 'coffeman3' },
+  { username: 'thomas.casco', password: 'eladmin' }
 ];
 
 // Función para verificar el inicio de sesión
