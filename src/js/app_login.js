@@ -5,7 +5,7 @@ const users = [
   { username: 'ariel.pesce', password: 'coffeman2' },
   { username: 'facundo.sanchez', password: 'taekwondo' },
   { username: 'joseluis.rodriguez', password: 'coffeman3' },
-  { username: 'thomas.casco', password: 'eladmin' }
+  { username: 'thomas.casco', password: 'adminboy' }
 ];
 
 // Función para verificar el inicio de sesión
