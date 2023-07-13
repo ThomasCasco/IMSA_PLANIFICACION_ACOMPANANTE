@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla de Datos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <table class="w-full bg-white border border-gray-300">
+      <thead>
+        <tr>
+          <th class="bg-red-500 text-white text-center py-2 px-4">Código</th>
+          <th>OP</th>
+          <th>Descripción</th>
+          <th>Cliente</th>
+          <th>Próximo Proceso</th>
+          <th>Original</th>
+          <th>A Fabricar</th>
+          <th>Fecha Disponibilidad Mat</th>
+          <th>Estado</th>
+          <th>Kilos</th>
+          <th>Objetivo Mensual Kilos</th>
+          <th>Tn de Conductor</th>
+          <th>Bobina Cant</th>
+          <th>Bobina Tamaño</th>
+          <th>Bobina Cant</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body">
+        <!-- Aquí se añadirán las filas dinámicamente -->
+      </tbody>
+    </table>
+
+    <button onclick="agregarFila()" class="mt-4 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Agregar Fila
+    </button>
+  </div>
+
+  <script>
+    function agregarFila() {
+      var tablaBody = document.getElementById("tabla-body");
+
+      var codigo = prompt("Ingrese el Código");
+      var op = prompt("Ingrese la OP");
+      var descripcion = prompt("Ingrese la Descripción");
+      var cliente = prompt("Ingrese el Cliente");
+      var proximoProceso = prompt("Ingrese el Próximo Proceso");
+      var original = prompt("Ingrese la cantidad Original");
+      var aFabricar = prompt("Ingrese la cantidad A Fabricar");
+      var fechaDisponibilidadMat = prompt("Ingrese la Fecha de Disponibilidad Mat");
+      var estado = prompt("Ingrese el Estado (trefilado, cuerda, aislacion, encintado, pantalla, cableado 203, vaina int, flejado, vaina 201, terminado, pantalla (1,03), pantalla (0,55))");
+      var kilos = prompt("Ingrese los Kilos");
+      var tnConductor = prompt("Ingrese las Tn de Conductor");
+      var bobinaCant1 = prompt("Ingrese la Cantidad de Bobina");
+      var bobinaTamano = prompt("Ingrese el Tamaño de Bobina");
+      var bobinaCant2 = prompt("Ingrese la Cantidad de Bobina");
+
+      var fila = document.createElement("tr");
+      fila.innerHTML = "<td class='bg-red-500 text-white py-2 px-4'>" + codigo + "</td>" +
+        "<td>" + op + "</td>" +
+        "<td>" + descripcion + "</td>" +
+        "<td>" + cliente + "</td>" +
+        "<td>" + proximoProceso + "</td>" +
+        "<td>" + original + "</td>" +
+        "<td>" + aFabricar + "</td>" +
+        "<td>" + fechaDisponibilidadMat + "</td>" +
+        "<td>" + estado + "</td>" +
+        "<td>" + kilos + "</td>" +
+        "<td></td>" +
+        "<td>" + tnConductor + "</td>" +
+        "<td>" + bobinaCant1 + "</td>" +
+        "<td>" + bobinaTamano + "</td>" +
+        "<td>" + bobinaCant2 + "</td>";
+
+      tablaBody.appendChild(fila);
+    }
+  </script>
+</body>
+</html>
