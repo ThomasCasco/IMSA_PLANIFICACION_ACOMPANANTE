@@ -162,44 +162,53 @@
                     <hr class="border-b-2 border-gray-600 my-8 mx-4">
         
                     <div class="flex flex-row flex-wrap flex-grow mt-2">
-        
-                        <div class="w-full md:w-1/2 p-3">
-                            <!--Graph Card-->
-                            
-        
-                        <div class="w-full p-3">
-                            <!--Table Card-->
-                            
-        
-        
+                        <div class="container mx-auto p-4">
+                            <table class="w-full bg-white text-center order border-gray-300 p-3">
+                              <thead>
+                                <tr>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Código</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">OP</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Descripción</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Cliente</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Próximo Proceso</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Original</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">A Fabricar</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Fecha Disponibilidad Mat</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Estado</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Kilos</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Objetivo Mensual Kilos</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Tn de Conductor</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Bobina Cant</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Bobina Tamaño</th>
+                                  <th class="bg-red-500 text-white border-black-500 text-center p-3 ">Bobina Cant</th>
+                                </tr>
+                              </thead>
+                              <tbody id="tabla-body">
+                                <!-- Aquí se añadirán las filas dinámicamente -->
+                              </tbody>
+                            </table>
+                        
+                            <button onclick="agregarFila()" class="mt-4 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                              Agregar Fila
+                            </button>
+                          </div>
+                          <script src="../js/app_media_tension.js"></script>
                     </div>
                                         
-                    <!--/ Console Content-->
-                            
+                    <!--/ Console Content-->     
                 </div>
-                
-        
             </div> 
             <!--/container-->
-            
             <footer class="bg-red-500 border-t border-white-400 shadow">	
-                <div class="container max-w-md mx-auto flex py-8">
-        
-                    
+                <div class="container max-w-md my-0 mx-auto flex py-8">
                                 <h3 class="font-bold font-bold text-gray-100">Desarrollado por:</h3>
                                 <p class="py-4 text-gray-600 text-sm">
-                                  
-    
-                        
                         <div class="flex w-full md:w-1/2">
                             <div class="px-8">
                             <h3 class="font-bold font-bold text-gray-100">Thomas Casco</h3>
                             </div>
                         </div>
                     </div>
-                
-        
-                
                 </div>
             </footer>
             <script src="../js/app_main.js"></script>
