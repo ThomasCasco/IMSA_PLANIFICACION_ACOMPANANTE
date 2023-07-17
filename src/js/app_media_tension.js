@@ -27,11 +27,16 @@ function agregarFila() {
       "<td>" + fechaDisponibilidadMat + "</td>" +
       "<td>" + estado + "</td>" +
       "<td>" + kilos + "</td>" +
-      "<td></td>" +
       "<td>" + tnConductor + "</td>" +
       "<td>" + bobinaCant1 + "</td>" +
       "<td>" + bobinaTamano + "</td>" +
       "<td>" + bobinaCant2 + "</td>";
-
     tablaBody.appendChild(fila);
   }
+
+  
+  
+
+ 
+
+  
