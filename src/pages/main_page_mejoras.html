@@ -34,10 +34,11 @@
                               </button>
                               <div id="userMenu" class="bg-red-700 rounded shadow-md mt-2 absolute mt-12 top-0 right-0 min-w-full overflow-auto z-30 invisible">
                                   <ul class="list-reset">
-                                    <li><a href="./main_page.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">Inicio</a></li>
-                                    <li><a href="./media_tension.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">Mt Seguimiento</a></li>
-                                    <li><a href="./anotaciones.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">Anotaciones Por seccion</a></li>
-                                    <li><a href="./ingreso_reposicion.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">Ingreso y reposicion de materiales</a></li>
+                                    <li><a href="./main_page.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">209</a></li>
+                                    <li><a href="./media_tension.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">120</a></li>
+                                    <li><a href="./anotaciones.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">121</a></li>
+                                    <li><a href="./anotaciones.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">520</a></li>
+                                    <li><a href="./ingreso_reposicion.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">Comander In</a></li>
                                     <li><hr class="border-t mx-2 border-gray-400"></li>
                                     <li><a href="/index.html" class="px-4 py-2 block text-gray-100 hover:bg-red-800 no-underline hover:no-underline">Cerrar sesion</a></li>
                                   </ul>
@@ -64,17 +65,22 @@
                             </li>
                             <li class="mr-6 my-2 md:my-0">
                                 <a href="./media_tension.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-pink-400">
-                                    <i class="fas fa-tasks fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">120</span>
+                                    <i class="fas fa-chart-area fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">120</span>
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
                                 <a href="./anotaciones.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-purple-400">
-                                    <i class="fa fa-envelope fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Anotaciones</span>
+                                    <i class="fas fa-chart-area fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">121</span>
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
                                 <a href="./ingreso_reposicion.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-green-400">
-                                    <i class="fas fa-chart-area fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Ingreso y Reposicion</span>
+                                    <i class="fas fa-chart-area fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">520</span>
+                                </a>
+                            </li>
+                            <li class="mr-6 my-2 md:my-0">
+                                <a href="./ingreso_reposicion.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-green-400">
+                                    <i class="fas fa-chart-area fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Comander In</span>
                                 </a>
                             </li>
                         </ul>
@@ -166,90 +172,91 @@
                                         new Chart(document.getElementById("chartjs-7"), {
                                             "type": "bar",
                                             "data": {
-                                                "labels": ["Julio", "Agosto", "Septiembre", "Octubre"],
+                                                "labels": ["Enero","Febrero","Marzo","Abril","Mayo","Julio","Julio"],
                                                 "datasets": [{
-                                                    "label": "Objetivo Mejoras",
-                                                    "data": [200, 0, 0, 0],
+                                                    "label": "Mejoras Identificadas",
+                                                    "data": [0,1,2,2,6,1,5],
                                                     "borderColor": "rgb(255, 99, 132)",
                                                     "backgroundColor": "rgba(255, 99, 132, 0.2)"
                                                 },{
-                                                    "label": "Mejoras",
-                                                    "data": [192, 0, 0, 0],
+                                                    "label": "Mejoras Realizadas",
+                                                    "data": [4,5,3,0,28,5,1],
                                                     "borderColor": "rgb(0, 0, 255)",
                                                     "backgroundColor": "rgba(0, 0, 255, 0.2)"
-                                                     }, {
+                                                     },
+                                                     {
                                                     "label": "Calidad",
-                                                    "data": [29, 0, 0, 0],
+                                                    "data": [0,1,0,0,3,0,1],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(0, 240, 26)"
                                                 },
                                                 {
                                                     "label": "Descarte",
-                                                    "data": [6,0, 0, 0],
+                                                    "data": [0,0,0,0,0,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(166, 165, 162)"
                                                 },
                                                 {
                                                     "label": "Esfuerzo",
-                                                    "data": [34, 0, 0, 0],
+                                                    "data": [1,2,1,0,3,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(90, 0, 45)"
                                                 },
                                                 {
                                                     "label": "Estandarizacion",
-                                                    "data": [13, 0, 0, 0],
+                                                    "data": [1,1,1,0,2,5,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(21, 10, 240)"
                                                 },
                                                 {
                                                     "label": "Movimiento",
-                                                    "data": [8, 0, 0, 0],
+                                                    "data": [0,0,1,0,1,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(10, 13, 10)"
                                                 },
                                                 {
                                                     "label": "Orden y Limpieza",
-                                                    "data": [36, 0, 0, 0],
+                                                    "data": [2,0,0,0,4,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(54, 162, 235)"
                                                 },
                                                 {
                                                     "label": "Productividad",
-                                                    "data": [30, 0, 0, 0],
+                                                    "data": [0,1,0,0,7,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(237, 142, 26)"
                                                 },
                                                 {
                                                     "label": "Seguridad",
-                                                    "data": [13, 0, 0, 0],
+                                                    "data": [0,0,0,0,3,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(167, 218, 219)"
                                                 },
                                                 {
                                                     "label": "Sobre Produccion",
-                                                    "data": [6, 0, 0, 0],
+                                                    "data": [0,0,0,0,2,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(107, 107, 107)"
                                                 },
                                                 {
                                                     "label": "Tiempo",
-                                                    "data": [15, 0, 0, 0],
+                                                    "data": [0,0,0,0,2,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(237, 233, 199)"
                                                 },
                                                 {
                                                     "label": "Transporte",
-                                                    "data": [2, 0, 0, 0],
+                                                    "data": [0,0,0,0,0,0,0],
                                                     "type": "line",
                                                     "fill": false,
                                                     "borderColor": "rgb(115, 150, 245)"
@@ -275,7 +282,7 @@
                             <!--Graph Card-->
                             <div class="bg-white border border-gray-800 rounded shadow">
                                 <div class="border-b border-gray-800 p-3">
-                                    <h5 class="font-bold uppercase text-gray-600">Seguimiento por Tipo de Mejora</h5>
+                                    <h5 class="font-bold uppercase text-gray-600">Seguimiento Por Mejora</h5>
                                 </div>
                                 <div class="p-5">
                                     <canvas id="chartjs-0" class="chartjs" width="undefined" height="undefined"></canvas>
@@ -283,93 +290,82 @@
                                         new Chart(document.getElementById("chartjs-0"), {
                                             "type": "line",
                                             "data": {
-                                                "labels":  ["Julio", "Agosto", "Septiembre", "Octubre"],
+                                                "labels": ["Enero","Febrero","Marzo","Abril","Mayo","Julio","Julio"],
                                                 "datasets": [{
-                                                    "label": "Objetivo Mejoras",
-                                                    "data": [200, 0, 0, 0],
-                                                    "borderColor": "rgb(255, 99, 132)",
-                                                    "backgroundColor": "rgba(255, 99, 132, 0.2)"
-                                                },{
-                                                    "label": "Mejoras",
-                                                    "data": [192, 0, 0, 0],
-                                                    "borderColor": "rgb(0, 0, 255)",
-                                                    "backgroundColor": "rgba(0, 0, 255, 0.2)"
-                                                     }, {
                                                     "label": "Calidad",
-                                                    "data": [29, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,1,0,0,3,0,1],
                                                     "fill": false,
-                                                    "borderColor": "rgb(0, 240, 26)"
-                                                },
-                                                {
+                                                    "borderColor": "rgb(0, 240, 26)",
+                                                    "lineTension": 0.1
+                                                },{
                                                     "label": "Descarte",
-                                                    "data": [6,0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,0,0,0,0,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(166, 165, 162)"
+                                                    "borderColor": "rgb(166, 165, 162)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Esfuerzo",
-                                                    "data": [34, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [1,2,1,0,3,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(90, 0, 45)"
+                                                    "borderColor": "rgb(90, 0, 45)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Estandarizacion",
-                                                    "data": [13, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [1,1,1,0,2,5,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(21, 10, 240)"
+                                                    "borderColor": "rgb(21, 10, 240)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Movimiento",
-                                                    "data": [8, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,0,1,0,1,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(10, 13, 10)"
+                                                    "borderColor": "rgb(10, 13, 10)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Orden y Limpieza",
-                                                    "data": [36, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [2,0,0,0,4,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(54, 162, 235)"
+                                                    "borderColor": "rgb(54, 162, 235)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Productividad",
-                                                    "data": [30, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,1,0,0,7,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(237, 142, 26)"
+                                                    "borderColor": "rgb(237, 142, 26)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Seguridad",
-                                                    "data": [13, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,0,0,0,3,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(167, 218, 219)"
+                                                    "borderColor": "rgb(167, 218, 219)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Sobre Produccion",
-                                                    "data": [6, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,0,0,0,2,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(107, 107, 107)"
+                                                    "borderColor": "rgb(107, 107, 107)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Tiempo",
-                                                    "data": [15, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,0,0,0,2,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(237, 233, 199)"
+                                                    "borderColor": "rgb(237, 233, 199)",
+                                                    "lineTension": 0.1
                                                 },
                                                 {
                                                     "label": "Transporte",
-                                                    "data": [2, 0, 0, 0],
-                                                    "type": "line",
+                                                    "data": [0,0,0,0,0,0,0],
                                                     "fill": false,
-                                                    "borderColor": "rgb(115, 150, 245)"
+                                                    "borderColor": "rgb(115, 150, 245)",
+                                                    "lineTension": 0.1
                                                 }
                                             ]
                                             },
@@ -385,7 +381,7 @@
                             <!--Graph Card-->
                             <div class="bg-white border border-gray-800 rounded shadow">
                                 <div class="border-b border-gray-800 p-3">
-                                    <h5 class="font-bold uppercase text-gray-600">Objetivos Mensuales Mejoras Planificadas</h5>
+                                    <h5 class="font-bold uppercase text-gray-600">Mejoras Identificadas por mes</h5>
                                 </div>
                                 <div class="p-5">
                                     <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
@@ -393,10 +389,10 @@
                                         new Chart(document.getElementById("chartjs-1"), {
                                             "type": "bar",
                                             "data": {
-                                                "labels": ["Abril", "Mayo", "Junio", "Julio"],
+                                                "labels": ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio"],
                                                 "datasets": [{
                                                     "label": "objetivo",
-                                                    "data": [200, 0, 0, 0],
+                                                    "data": [0,1,2,2,6,1,5],
                                                     "fill": false,
                                                     "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
                                                     "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
@@ -423,7 +419,7 @@
                             <!--Graph Card-->
                             <div class="bg-white border border-gray-800 rounded shadow">
                                 <div class="border-b border-gray-800 p-3">
-                                    <h5 class="font-bold uppercase text-gray-600">Mejoras Realizadas segun tipo, Julio</h5>
+                                    <h5 class="font-bold uppercase text-gray-600">Mejoras Realizadas segun tipo, Anual</h5>
                                 </div>
                                 <div class="p-5"><canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
                                     <script>
@@ -448,7 +444,7 @@
                             <!--Template Card-->
                             <div class="bg-white border border-gray-800 rounded shadow">
                                 <div class="border-b border-gray-800 p-3">
-                                    <h5 class="font-bold uppercase text-gray-600">Diferencia de Objetivos de Mejoras - Realizadas</h5>
+                                    <h5 class="font-bold uppercase text-gray-600">Diferencia de Identificadas contra Realizadas</h5>
                                 </div>
                                 <div class="p-5">
                                     <canvas id="chartjs-2" class="chartjs" width="undefined" height="undefined"></canvas>
@@ -456,10 +452,10 @@
                                         new Chart(document.getElementById("chartjs-2"), {
                                             "type": "bar",
                                             "data": {
-                                                "labels": ["Abril", "Mayo", "Junio", "Julio"],
+                                                "labels": ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio"],
                                                 "datasets": [{
                                                     "label": "diferencia",
-                                                    "data": [8, 0, 0, 0],
+                                                    "data": [-4,-4,-1,2,-22,-4,4],
                                                     "fill": false,
                                                     "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
                                                     "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
