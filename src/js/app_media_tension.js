@@ -11,6 +11,7 @@ function agregarFila() {
     var fechaDisponibilidadMat = prompt("Ingrese la Fecha de Disponibilidad Mat");
     var estado = prompt("Ingrese el Estado (trefilado, cuerda, aislacion, encintado, pantalla, cableado 203, vaina int, flejado, vaina 201, terminado, pantalla (1,03), pantalla (0,55))");
     var kilos = prompt("Ingrese los Kilos");
+    var objetivoMensual = prompt("Ingrese el objetivo mensual");
     var tnConductor = prompt("Ingrese las Tn de Conductor");
     var bobinaCant1 = prompt("Ingrese la Cantidad de Bobina");
     var bobinaTamano = prompt("Ingrese el Tamaño de Bobina");
@@ -27,10 +28,11 @@ function agregarFila() {
       "<td>" + fechaDisponibilidadMat + "</td>" +
       "<td>" + estado + "</td>" +
       "<td>" + kilos + "</td>" +
+      "<td>" + objetivoMensual + "</td>" +
       "<td>" + tnConductor + "</td>" +
       "<td>" + bobinaCant1 + "</td>" +
       "<td>" + bobinaTamano + "</td>" +
-      "<td>" + bobinaCant2 + "</td>";
+      "<td>" + bobinaCant2 + "</td>" ;
     tablaBody.appendChild(fila);
   }
 

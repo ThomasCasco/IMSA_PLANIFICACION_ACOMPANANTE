@@ -30,3 +30,21 @@ function loginUser() {
 // Asignar la función loginUser al evento click del botón "Entrar"
 const loginButton = document.querySelector('button');
 loginButton.addEventListener('click', loginUser);
+
+ // Obtenemos una referencia al campo de texto y al botón
+  const campoTexto = document.getElementById("password");
+  const boton = document.getElementById("miBoton");
+
+  // Agregamos un evento para capturar la pulsación de tecla en el campo de texto
+  campoTexto.addEventListener("keyup", function(event) {
+    // Comprobamos si la tecla presionada es "Enter" (código 13)
+    if (event.keyCode === 13) {
+      // Activamos el botón simulando un clic en él
+      boton.click();
+    }
+  });
+
+  // Agregamos el evento click al botón para que haga lo que necesites
+  boton.addEventListener("click", function() {
+    loginUser()
+  });
