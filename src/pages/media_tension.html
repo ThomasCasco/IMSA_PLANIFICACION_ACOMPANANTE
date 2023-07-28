@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
 </head>
-<body>
-    <body class="bg-black-alt font-sans leading-normal tracking-normal">
+<body class="bg-black-alt font-sans leading-normal tracking-normal">
 
         <nav id="header" class="bg-red-500 fixed w-full z-10 top-0 shadow">
             
@@ -56,6 +55,19 @@
                     <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-red z-20" id="nav-content">
                         <ul class="list-reset lg:flex flex-1 items-center px-4 md:px-0">
                             <li class="mr-6 my-2 md:my-0">
+
+                                <a href="./main_page.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-white">
+                                    <i class="fas fa-home fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Inicio</span>
+                                </a>
+                            </li>
+                            <li class="mr-6 my-2 md:my-0">
+                                <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white-100 border-b-2 border-blue-400 hover:border-blue-400">
+                                    <i class="fas fa-tasks fa-fw mr-3 text-blue-400"></i><span class="pb-1 md:pb-0 text-sm">Seguimiento MT</span>
+                                </a>
+                            </li>
+                            <li class="mr-6 my-2 md:my-0">
+                                <a href="anotaciones.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-white">
+
                                 <a href="./main_page.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white-100 border-b-2 border-blue-400 hover:border-blue-400">
                                     <i class="fas fa-home fa-fw mr-3 text-blue-400"></i><span class="pb-1 md:pb-0 text-sm">Inicio</span>
                                 </a>
@@ -67,11 +79,16 @@
                             </li>
                             <li class="mr-6 my-2 md:my-0">
                                 <a href="./anotaciones.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-purple-400">
+
                                     <i class="fa fa-envelope fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Anotaciones</span>
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
+
+                                <a href="ingreso_reposicion.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-white">
+
                                 <a href="./ingreso_reposicion.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-green-400">
+
                                     <i class="fas fa-chart-area fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Ingreso y Reposicion</span>
                                 </a>
                             </li>
@@ -92,16 +109,8 @@
             </nav>
         
             <!--Container-->
-            <div class="container w-full mx-auto pt-20">
-                
-                <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">
-                    
-                    <!--Console Content-->
-                    
-                    
-                            <!--/Metric Card-->
-                        </div>
-                        <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+            <div class="flex flex-row container w-full mx-auto pt-20">
+                        <div class="w-full md:w-1/2 xl:w-1/3 p-3" style="margin-top: 100px;">
                             <!--Metric Card-->
                             <div class="bg-white border border-gray-800 rounded shadow p-2">
                                 <div class="flex flex-row items-center">
@@ -116,17 +125,7 @@
                             </div>
                             <!--/Metric Card-->
                         </div>
-                        <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                            <!--Metric Card-->
-                       
-                            <!--/Metric Card-->
-                        </div>
-                        <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                            <!--Metric Card-->
-                        
-                            <!--/Metric Card-->
-                        </div>
-                        <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+                        <div class="w-full md:w-1/2 xl:w-1/3 p-3" style="margin-top: 100px;">
                             <!--Metric Card-->
                             <div class="bg-white border border-gray-800 rounded shadow p-2">
                                 <div class="flex flex-row items-center">
@@ -141,7 +140,7 @@
                             </div>
                             <!--/Metric Card-->
                         </div>
-                        <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+                        <div class="w-full md:w-1/2 xl:w-1/3 p-3" style="margin-top: 100px;">
                             <!--Metric Card-->
                             <div class="bg-white border border-gray-800 rounded shadow p-2">
                                 <div class="flex flex-row items-center">
@@ -195,11 +194,12 @@
                           </div>
                           <script src="../js/app_media_tension.js"></script>
                     </div>
-                                        
+                    
                     <!--/ Console Content-->     
                 </div>
             </div> 
             <!--/container-->
+  
             <footer class="bg-red-500 border-t border-white-400 shadow">	
                 <div class="container max-w-md my-0 mx-auto flex py-8">
                                 <h3 class="font-bold font-bold text-gray-100">Desarrollado por:</h3>
@@ -210,8 +210,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </footer>
+            
             <script src="../js/app_main.js"></script>
 </body>
 </html>
