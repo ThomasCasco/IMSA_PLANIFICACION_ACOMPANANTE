@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style_main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-white border border-gray-800 rounded shadow">
+        <div class="border-b border-gray-800 p-3">
+            <h5 class="font-bold uppercase text-gray-600">Objetivo contra Realizado</h5>
+        </div>
+        <div class="p-5">
+            <canvas id="chartjs-7" class="chartjs" width="undefined" height="undefined"></canvas>
+            <script>
+                new Chart(document.getElementById("chartjs-7"), {
+                    "type": "bar",
+                    "data": {
+                        "labels": ["Enero","Febrero","Marzo","Abril","Mayo","Julio","Julio"],
+                        "datasets": [{
+                            "label": "Mejoras Identificadas",
+                            "data": [0,1,2,2,6,1,5],
+                            "borderColor": "rgb(255, 99, 132)",
+                            "backgroundColor": "rgba(255, 99, 132, 0.2)"
+                        },{
+                            "label": "Mejoras Realizadas",
+                            "data": [4,5,3,0,28,5,1],
+                            "borderColor": "rgb(0, 0, 255)",
+                            "backgroundColor": "rgba(0, 0, 255, 0.2)"
+                             },
+                             {
+                            "label": "Calidad",
+                            "data": [0,1,0,0,3,0,1],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(0, 240, 26)"
+                        },
+                        {
+                            "label": "Descarte",
+                            "data": [0,0,0,0,0,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(166, 165, 162)"
+                        },
+                        {
+                            "label": "Esfuerzo",
+                            "data": [1,2,1,0,3,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(90, 0, 45)"
+                        },
+                        {
+                            "label": "Estandarizacion",
+                            "data": [1,1,1,0,2,5,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(21, 10, 240)"
+                        },
+                        {
+                            "label": "Movimiento",
+                            "data": [0,0,1,0,1,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(10, 13, 10)"
+                        },
+                        {
+                            "label": "Orden y Limpieza",
+                            "data": [2,0,0,0,4,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(54, 162, 235)"
+                        },
+                        {
+                            "label": "Productividad",
+                            "data": [0,1,0,0,7,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(237, 142, 26)"
+                        },
+                        {
+                            "label": "Seguridad",
+                            "data": [0,0,0,0,3,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(167, 218, 219)"
+                        },
+                        {
+                            "label": "Sobre Produccion",
+                            "data": [0,0,0,0,2,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(107, 107, 107)"
+                        },
+                        {
+                            "label": "Tiempo",
+                            "data": [0,0,0,0,2,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(237, 233, 199)"
+                        },
+                        {
+                            "label": "Transporte",
+                            "data": [0,0,0,0,0,0,0],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": "rgb(115, 150, 245)"
+                        }]
+                    },
+                    "options": {
+                        "scales": {
+                            "yAxes": [{
+                                "ticks": {
+                                    "beginAtZero": true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
